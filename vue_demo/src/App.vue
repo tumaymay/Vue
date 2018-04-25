@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <img src="./assets/logo.png" />
+    
+   
+
+    <Big/>
+
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import MyComponent from './components/myComponent'
+import Parent from './components/sonparent/parent'
+import Parents from './components/slots/parent'
+import Big from './components/comkeep/big'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MyComponent,
+    Parent,
+    Parents,
+    Big
   }
 }
 </script>
@@ -25,4 +38,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
